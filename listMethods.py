@@ -13,4 +13,20 @@
 
 
 # exercise to remove the duplicate no from the list
-arr = [1,6,7,1,6,5,4,7];
+arr = [1,2,3,1,2];
+arr.sort();
+i=0;
+
+# while i<len(arr):
+#     if arr[i]==arr[i+1]:
+#        arr.remove(arr[i]);  
+#     else: 
+#         i+=1;
+
+# print(arr);
+     
+uniques =[];
+for number in arr:
+    if number not in uniques:
+        uniques.append(number);
+print(uniques);
